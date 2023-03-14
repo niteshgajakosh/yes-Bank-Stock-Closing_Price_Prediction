@@ -9,10 +9,28 @@ Yes Bank is a well-known bank in the Indian financial domain. Since 2018, it has
 
 # Visualizations
 
-# 1) stock price over time
+## 1) stock price over time
 ![image](https://user-images.githubusercontent.com/101973003/225005576-862f675b-5894-475e-b035-3e87f44bce11.png)
-# 2) correlation
+## 2) correlation
 ![image](https://user-images.githubusercontent.com/101973003/225005984-7f4361e3-1e79-4239-b941-0188708caca1.png)
+
+
+## model performance
+![image](https://user-images.githubusercontent.com/101973003/225006476-38c1e1e7-edb1-44d3-a600-f03b6e148af7.png)
+
+# Model used-
+## Ridge regression
+
+![image](https://user-images.githubusercontent.com/101973003/225009696-a0055857-2029-4f55-b854-08cc27c572fa.png)
+
+## Lasso regression
+
+![image](https://user-images.githubusercontent.com/101973003/225010231-6ec551b5-d5e1-4a7b-bd73-80036b4dbcb2.png)
+
+## KNN regressor
+
+![image](https://user-images.githubusercontent.com/101973003/225010472-1c862423-e8bc-49d7-9636-aeb6beb206aa.png)
+
 
 We performed Linear regression setting high, low and open as independent variables. Divided the dataset into training and testing datasets. We transformed the data using MinMax scaler which transforms each feature in a given range. We predicted the closing price of the test data using the Linear regression model we have trained.
 
@@ -20,17 +38,22 @@ Also, to check how other models perform, we performed Lasso regression and Ridge
 
 Moving forward, we calculated the various performance metrics like MAE, MAPE, MSE, RMSE, r2 scores for all the three models. Finally, we plotted the actual values vs predicted values of the closing price for all of them. Linear Regression has given the best results with lowest MAE, MSE, RMSE and MAPE scores. Ridge regression shrunk the parameters to reduce complexity and multicollinearity, but ended up affecting the evaluation metrics. Lasso regression did feature selection and ended up giving up worse results than ridge which again reflects the fact that each feature is important.
 
-# model performance
-![image](https://user-images.githubusercontent.com/101973003/225006476-38c1e1e7-edb1-44d3-a600-f03b6e148af7.png)
 
-#Conclusion
-In EDA part we observed that
+
+## Conclusion
+* In EDA part we observed that
 1.There is increase in trend of Yes Bank's stock's Close,Open,High,Low price till 2018 an then sudden decrease.
 2.We observed that open vs close price graph concluded that after 2018 yes bank's stock hitted drastically.
 3.Target variable(dependent variable) strongly dependent on independent variables
 4.We get maximum accuracy of 99%
 5.Linear regression and Ridge regression get almost same R squared valueWhereas Lasso model shows lowest R squared value and high MSE,RMSE,MAE,MAPE
 6.Ridge regression shrunk the parameters to reduce complexity and multicollinearity but ended up affecting the evaluation metrics.
+
+
+# References
+1.https://trendlyne.com/research-reports/stock/1535/YESBANK/yes-bank-ltd/
+
+2.https://www.ijraset.com/research-paper/stock-market-prediction-using-ml
 
 
 
